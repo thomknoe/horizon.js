@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SkyTime</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌅</text></svg>">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.min.js"></script>
+  <script src="sounds.js"></script>
+  <script src="voice.js" defer></script>
+  <script src="serial.js"></script>
+  <script src="sketch.js" defer></script>
+</head>
+<body>
+  <div class="ui">
+    <div id="location-info">Enter a location:</div>
+    <input id="location-input" type="text" placeholder="e.g. Tokyo" />
+    <button onclick="fetchLocation()">Go</button>
+    <button id="voice-button">Speak</button>
+    <button id="connect-arduino">Connect Arduino</button>
+    <button id="connect-ble">Connect Nano BLE</button>
+
+
+
+  </div>
+</body>
+</html>
